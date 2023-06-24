@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Birthdaylist from './Components/Birthdaylist';
+import data from './Components/data';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{fontFamily:"sans-serif",color:"darkorchid"}}>There are {data.length} birthdays.</h1>
+      <Birthdaylist/>
     </div>
   );
 }
